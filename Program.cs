@@ -16,7 +16,7 @@ namespace Parameteruebergabe
             do
             {
                 var module = new Module(string.Empty, 0);
-                FillModule(ref module);
+                FillModule(module);
                 moduleList.Add(module);
 
                 Console.WriteLine("\nWollen Sie ein weiteres Fach eingeben? (j/n)");
@@ -28,7 +28,7 @@ namespace Parameteruebergabe
         }
 
 
-        static void FillModule(ref Module module)
+        static void FillModule(Module module)
         {
             Console.WriteLine("Geben Sie den Name des Fachs ein:");
             module.Name = Console.ReadLine();
