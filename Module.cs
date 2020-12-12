@@ -12,21 +12,8 @@ namespace Parameteruebergabe
             Grade = grade;
         }
 
-        private string name;
-
-        private double grade;
-
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-
-        public double Grade
-        {
-            get { return grade; }
-            set { grade = value; }
-        }
+        public string Name { get; set; }
+        public double Grade { get; set; }
 
 
 
